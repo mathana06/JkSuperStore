@@ -1,16 +1,18 @@
 import { motion } from 'framer-motion';
 import { FaInstagram, FaPlay } from 'react-icons/fa';
 
+const base = import.meta.env.BASE_URL;
+
 const REELS = [
-  { url: 'https://www.instagram.com/p/DWX8SMRCn5i/', img: '/store-photos/store-2.jpg', label: 'New Arrivals' },
-  { url: 'https://www.instagram.com/jksuperstore_rto/reel/DWa5Q3qio9y/', img: '/store-photos/store-3.jpg', label: 'Kitchen Deals' },
-  { url: 'https://www.instagram.com/p/DWZHoLnioQu/', img: '/store-photos/store-4.jpg', label: 'Glassware' },
-  { url: 'https://www.instagram.com/p/DWT7b3eCpik/', img: '/store-photos/store-5.jpg', label: 'Beauty' },
-  { url: 'https://www.instagram.com/p/DWO7WPAiklT/', img: '/store-photos/store-6.jpg', label: 'Toys' },
-  { url: 'https://www.instagram.com/p/DWB_zzhihpJ/', img: '/store-photos/store-7.jpg', label: 'Arts' },
-  { url: 'https://www.instagram.com/p/DV8elB-Tmxv/', img: '/store-photos/store-10.jpg', label: 'Home Decor' },
-  { url: 'https://www.instagram.com/p/DV565qez9dw/', img: '/store-photos/store-11.jpg', label: 'Storage' },
-  { url: 'https://www.instagram.com/p/DV5XfVqCvtc/', img: '/store-photos/store-13.jpg', label: 'Crockery' },
+  { url: 'https://www.instagram.com/p/DWX8SMRCn5i/', img: `${base}store-photos/store-2.jpg`, label: 'New Arrivals' },
+  { url: 'https://www.instagram.com/jksuperstore_rto/reel/DWa5Q3qio9y/', img: `${base}store-photos/store-3.jpg`, label: 'Kitchen Deals' },
+  { url: 'https://www.instagram.com/p/DWZHoLnioQu/', img: `${base}store-photos/store-4.jpg`, label: 'Glassware' },
+  { url: 'https://www.instagram.com/p/DWT7b3eCpik/', img: `${base}store-photos/store-5.jpg`, label: 'Beauty' },
+  { url: 'https://www.instagram.com/p/DWO7WPAiklT/', img: `${base}store-photos/store-6.jpg`, label: 'Toys' },
+  { url: 'https://www.instagram.com/p/DWB_zzhihpJ/', img: `${base}store-photos/store-7.jpg`, label: 'Arts' },
+  { url: 'https://www.instagram.com/p/DV8elB-Tmxv/', img: `${base}store-photos/store-10.jpg`, label: 'Home Decor' },
+  { url: 'https://www.instagram.com/p/DV565qez9dw/', img: `${base}store-photos/store-11.jpg`, label: 'Storage' },
+  { url: 'https://www.instagram.com/p/DV5XfVqCvtc/', img: `${base}store-photos/store-13.jpg`, label: 'Crockery' },
 ];
 
 export default function InstagramReels() {

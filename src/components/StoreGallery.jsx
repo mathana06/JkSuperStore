@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion';
 import { FaCamera, FaGoogle } from 'react-icons/fa';
 
+const base = import.meta.env.BASE_URL;
+
 const STORE_PHOTOS = [
-  { id: 1, src: '/store-photos/store-19.webp', alt: 'JK Super Store - Store View', span: 'wide' },
-  { id: 2, src: '/store-photos/store-15.webp', alt: 'JK Super Store - Products Display', span: 'normal' },
-  { id: 3, src: '/store-photos/store-16.webp', alt: 'JK Super Store - Shelves', span: 'normal' },
-  { id: 4, src: '/store-photos/store-17.webp', alt: 'JK Super Store - Collection', span: 'normal' },
-  { id: 5, src: '/store-photos/store-18.webp', alt: 'JK Super Store - Items', span: 'normal' },
-  { id: 6, src: '/store-photos/store-14.webp', alt: 'JK Super Store - Interior', span: 'wide' },
-  { id: 7, src: '/store-photos/store-4.jpg', alt: 'JK Super Store - Products', span: 'normal' },
-  { id: 8, src: '/store-photos/store-3.jpg', alt: 'JK Super Store - Aisle', span: 'normal' },
+  { id: 1, src: `${base}store-photos/store-19.webp`, alt: 'JK Super Store - Store View', span: 'wide' },
+  { id: 2, src: `${base}store-photos/store-15.webp`, alt: 'JK Super Store - Products Display', span: 'normal' },
+  { id: 3, src: `${base}store-photos/store-16.webp`, alt: 'JK Super Store - Shelves', span: 'normal' },
+  { id: 4, src: `${base}store-photos/store-17.webp`, alt: 'JK Super Store - Collection', span: 'normal' },
+  { id: 5, src: `${base}store-photos/store-18.webp`, alt: 'JK Super Store - Items', span: 'normal' },
+  { id: 6, src: `${base}store-photos/store-14.webp`, alt: 'JK Super Store - Interior', span: 'wide' },
+  { id: 7, src: `${base}store-photos/store-4.jpg`, alt: 'JK Super Store - Products', span: 'normal' },
+  { id: 8, src: `${base}store-photos/store-3.jpg`, alt: 'JK Super Store - Aisle', span: 'normal' },
 ];
 
 export default function StoreGallery() {
